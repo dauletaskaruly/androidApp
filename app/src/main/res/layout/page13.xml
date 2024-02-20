@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/imageView35"
+        android:layout_height="311dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        app:srcCompat="@drawable/apec123" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="-50dp"
+        android:background="@drawable/upbox"
+        android:text="."
+        android:textColor="#294936"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="130dp"
+        android:layout_marginTop="-20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="420dp"
+        android:layout_height="400dp"
+        android:layout_marginBottom="-30dp"
+        android:background="@drawable/upbox"
+        android:text="."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="240dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/whitebox"
+        android:text="."
+        app:layout_constraintEnd_toStartOf="@+id/editText2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView36"
+        app:layout_constraintTop_toBottomOf="@+id/editText4" />
+
+    <ImageView
+        android:id="@+id/imageView36"
+        android:layout_width="120dp"
+        android:layout_height="115dp"
+        android:layout_marginEnd="-30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/editText3"
+        app:layout_constraintEnd_toStartOf="@+id/editText3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/editText2"
+        app:layout_constraintTop_toTopOf="@+id/editText3"
+        app:srcCompat="@drawable/photo_2024_02_10_16_27_32_1" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="170dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/whitebox"
+        android:fontFamily="@font/oxygen_bold"
+        android:text="News and Events"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editText2" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/oxygen"
+        android:text="APEC students and staff are organizing the &quot;give a book to the Library&quot; campaign in honor of the International Book gift Day, February 14. We invite you to take an active part in this action with the desire to share your favorite books with each other."
+        android:textAlignment="center"
+        android:textSize="9sp"
+        app:layout_constraintBottom_toBottomOf="@+id/editText3"
+        app:layout_constraintEnd_toEndOf="@+id/editText3"
+        app:layout_constraintStart_toEndOf="@+id/imageView36" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:fontFamily="@font/oxygen_bold"
+        android:text="FEBRUARY 14TH -  BOOK GIVING DAY"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/editText3"
+        app:layout_constraintStart_toEndOf="@+id/imageView36"
+        app:layout_constraintTop_toTopOf="@+id/editText3" />
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="-10dp"
+        android:background="@drawable/whitebox"
+        android:paddingStart="15dp"
+        android:text="."
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/imageView37"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView37"
+        app:layout_constraintTop_toBottomOf="@+id/imageView37" />
+
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="-10dp"
+        android:background="@drawable/whitebox"
+        android:paddingStart="15dp"
+        android:text="."
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/imageView39"
+        app:layout_constraintStart_toStartOf="@+id/imageView39"
+        app:layout_constraintTop_toBottomOf="@+id/imageView39" />
+
+    <EditText
+        android:id="@+id/editText7"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="-10dp"
+        android:background="@drawable/whitebox"
+        android:paddingStart="15dp"
+        android:text="."
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/imageView38"
+        app:layout_constraintStart_toStartOf="@+id/imageView38"
+        app:layout_constraintTop_toBottomOf="@+id/imageView38" />
+
+    <ImageView
+        android:id="@+id/imageView37"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView36"
+        app:srcCompat="@drawable/second" />
+
+    <ImageView
+        android:id="@+id/imageView38"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView39"
+        app:layout_constraintStart_toEndOf="@+id/imageView37"
+        app:layout_constraintTop_toBottomOf="@+id/editText3"
+        app:srcCompat="@drawable/third" />
+
+    <ImageView
+        android:id="@+id/imageView39"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText3"
+        app:srcCompat="@drawable/mukasan" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/oxygen"
+        android:text="INVITE YOU TO ICT INTELLECTUAL SHOW"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="@+id/editText5"
+        app:layout_constraintEnd_toEndOf="@+id/editText5"
+        app:layout_constraintStart_toStartOf="@+id/editText5"
+        app:layout_constraintTop_toBottomOf="@+id/imageView37" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/oxygen"
+        android:text="Science Olympiad  for 1-2 courses"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#000000"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="@+id/editText7"
+        app:layout_constraintEnd_toEndOf="@+id/editText7"
+        app:layout_constraintStart_toStartOf="@+id/editText7"
+        app:layout_constraintTop_toBottomOf="@+id/imageView38" />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="97sp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/oxygen"
+        android:text="KINOTIME FOR PARENTS -  DOS MUKASAN"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="@+id/editText6"
+        app:layout_constraintEnd_toEndOf="@+id/editText6"
+        app:layout_constraintStart_toStartOf="@+id/editText6"
+        app:layout_constraintTop_toBottomOf="@+id/imageView39" />
+
+    <ImageView
+        android:id="@+id/imageView40"
+        android:layout_width="18sp"
+        android:layout_height="18sp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView35"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:srcCompat="@drawable/back" />
+
+    <ImageView
+        android:id="@+id/imageView41"
+        android:layout_width="20sp"
+        android:layout_height="20sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/editText1"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:srcCompat="@drawable/burger" />
+
+    <ImageView
+        android:id="@+id/imageView42"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/editText1"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:srcCompat="@drawable/kolokol" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

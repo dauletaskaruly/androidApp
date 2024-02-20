@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="-50dp"
+        android:background="@drawable/upbox"
+        android:text="."
+        android:textColor="#294936"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="130dp"
+        android:layout_marginTop="-20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/oxygen_bold"
+        android:text="List of documents"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText1" />
+
+    <ImageView
+        android:id="@+id/imageView45"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView34"
+        app:srcCompat="@drawable/line" />
+
+    <ImageView
+        android:id="@+id/imageView59"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView45"
+        app:srcCompat="@drawable/line" />
+
+    <ImageView
+        android:id="@+id/imageView60"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView59"
+        app:srcCompat="@drawable/line" />
+
+    <ImageView
+        android:id="@+id/imageView61"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView60"
+        app:srcCompat="@drawable/line" />
+
+    <ImageView
+        android:id="@+id/imageView62"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView61"
+        app:srcCompat="@drawable/line" />
+
+    <ImageView
+        android:id="@+id/imageView63"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView45"
+        app:layout_constraintStart_toStartOf="@+id/imageView45"
+        app:layout_constraintTop_toTopOf="@+id/imageView45"
+        app:srcCompat="@drawable/photo" />
+
+    <ImageView
+        android:id="@+id/imageView64"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView59"
+        app:layout_constraintStart_toStartOf="@+id/imageView59"
+        app:layout_constraintTop_toTopOf="@+id/imageView59"
+        app:srcCompat="@drawable/idcard" />
+
+    <ImageView
+        android:id="@+id/imageView65"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView60"
+        app:layout_constraintStart_toStartOf="@+id/imageView60"
+        app:layout_constraintTop_toTopOf="@+id/imageView60"
+        app:layout_constraintVertical_bias="0.514"
+        app:srcCompat="@drawable/diploma" />
+
+    <ImageView
+        android:id="@+id/imageView66"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView61"
+        app:layout_constraintStart_toStartOf="@+id/imageView61"
+        app:layout_constraintTop_toTopOf="@+id/imageView61"
+        app:srcCompat="@drawable/rentgen" />
+
+    <ImageView
+        android:id="@+id/imageView67"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView62"
+        app:layout_constraintStart_toStartOf="@+id/imageView62"
+        app:layout_constraintTop_toTopOf="@+id/imageView62"
+        app:srcCompat="@drawable/benefit" />
+
+    <ImageView
+        android:id="@+id/imageView68"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView45"
+        app:layout_constraintEnd_toEndOf="@+id/imageView45"
+        app:layout_constraintTop_toTopOf="@+id/imageView45"
+        app:srcCompat="@drawable/upload" />
+
+    <ImageView
+        android:id="@+id/imageView69"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView59"
+        app:layout_constraintEnd_toEndOf="@+id/imageView59"
+        app:layout_constraintTop_toTopOf="@+id/imageView59"
+        app:srcCompat="@drawable/upload" />
+
+    <ImageView
+        android:id="@+id/imageView70"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView60"
+        app:layout_constraintEnd_toEndOf="@+id/imageView60"
+        app:layout_constraintTop_toTopOf="@+id/imageView60"
+        app:srcCompat="@drawable/upload" />
+
+    <ImageView
+        android:id="@+id/imageView71"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView61"
+        app:layout_constraintEnd_toEndOf="@+id/imageView61"
+        app:layout_constraintTop_toTopOf="@+id/imageView61"
+        app:srcCompat="@drawable/upload" />
+
+    <ImageView
+        android:id="@+id/imageView72"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView62"
+        app:layout_constraintEnd_toEndOf="@+id/imageView62"
+        app:layout_constraintTop_toTopOf="@+id/imageView62"
+        app:srcCompat="@drawable/upload" />
+
+    <TextView
+        android:id="@+id/textView55"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/oxygen_bold"
+        android:text="3x4 photo"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView45"
+        app:layout_constraintStart_toEndOf="@+id/imageView63"
+        app:layout_constraintTop_toTopOf="@+id/imageView45" />
+
+    <TextView
+        android:id="@+id/textView56"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/oxygen_bold"
+        android:text="Identity card/birth certificate"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView59"
+        app:layout_constraintStart_toEndOf="@+id/imageView64"
+        app:layout_constraintTop_toTopOf="@+id/imageView59" />
+
+    <TextView
+        android:id="@+id/textView57"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/oxygen_bold"
+        android:text="Original document of"
+        android:textColor="#000000"
+        app:layout_constraintStart_toEndOf="@+id/imageView65"
+        app:layout_constraintTop_toTopOf="@+id/imageView60" />
+
+    <TextView
+        android:id="@+id/textView58"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/oxygen_bold"
+        android:text="Certificate №075 with attached fluoroscopy (original)"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView61"
+        app:layout_constraintStart_toEndOf="@+id/imageView66"
+        app:layout_constraintTop_toTopOf="@+id/imageView61" />
+
+    <TextView
+        android:id="@+id/textView59"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/oxygen_bold"
+        android:text="Document confirming the benefit, if any."
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView62"
+        app:layout_constraintStart_toEndOf="@+id/imageView67"
+        app:layout_constraintTop_toTopOf="@+id/imageView62" />
+
+    <TextView
+        android:id="@+id/textView60"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/oxygen_bold"
+        android:text="education (diploma, certificate)"
+        android:textColor="#000000"
+        app:layout_constraintStart_toEndOf="@+id/imageView65"
+        app:layout_constraintTop_toBottomOf="@+id/textView57" />
+
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/upbox"
+        android:text="."
+        android:textColor="#294936"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView62" />
+
+    <TextView
+        android:id="@+id/textView61"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/oxygen_bold"
+        android:text="Save and upload"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/editText6"
+        app:layout_constraintEnd_toEndOf="@+id/editText6"
+        app:layout_constraintStart_toStartOf="@+id/editText6"
+        app:layout_constraintTop_toTopOf="@+id/editText6" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#294936">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="409dp"
+        android:layout_height="141dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="-30dp"
+        android:layout_marginEnd="26dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ellipse_4" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/oxygen_bold"
+        android:text="Todays Class"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:srcCompat="@drawable/back" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/group_27" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/oxygen"
+        android:text="Hello,"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/oxygen_bold"
+        android:text="Daulet Askaruly"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="26dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toEndOf="@+id/textView8"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/wave" />
+
+    <EditText
+        android:id="@+id/whitebox1"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/whitebox"
+        android:fontFamily="@font/oxygen_bold"
+        android:paddingLeft="10dp"
+        android:paddingBottom="30dp"
+        android:text="11:30 - 12:50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/oxygen_bold"
+        android:text="PM 7.1 Install a web content management system IS 1-21"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/whitebox1"
+        app:layout_constraintTop_toTopOf="@+id/whitebox1" />
+
+    <EditText
+        android:id="@+id/greenbox1"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="-250dp"
+        android:background="@drawable/greenbox"
+        android:fontFamily="@font/oxygen_bold"
+        android:paddingLeft="20dp"
+        android:paddingTop="5dp"
+        android:text="309"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/whitebox1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/whitebox1" />
+
+    <EditText
+        android:id="@+id/whitebox2"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/whitebox"
+        android:fontFamily="@font/oxygen_bold"
+        android:paddingLeft="10dp"
+        android:paddingBottom="30dp"
+        android:text="11:30 - 12:50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/whitebox1" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/oxygen_bold"
+        android:text="PM 7.1 Install a web content management system IS 1-21"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/whitebox2"
+        app:layout_constraintTop_toTopOf="@+id/whitebox2" />
+
+    <EditText
+        android:id="@+id/greenbox2"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="-250dp"
+        android:background="@drawable/greenbox"
+        android:fontFamily="@font/oxygen_bold"
+        android:paddingLeft="20dp"
+        android:paddingTop="5dp"
+        android:text="309"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/whitebox2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.903"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/whitebox2" />
+
+    <EditText
+        android:id="@+id/whitebox3"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/whitebox"
+        android:fontFamily="@font/oxygen_bold"
+        android:paddingLeft="10dp"
+        android:paddingBottom="30dp"
+        android:text="11:30 - 12:50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/whitebox2" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/oxygen_bold"
+        android:text="PM 7.1 Install a web content management system IS 1-21"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/whitebox3"
+        app:layout_constraintTop_toTopOf="@+id/whitebox3" />
+
+    <EditText
+        android:id="@+id/greenbox3"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="225dp"
+        android:background="@drawable/greenbox"
+        android:fontFamily="@font/oxygen_bold"
+        android:paddingLeft="20dp"
+        android:paddingTop="5dp"
+        android:text="309"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/whitebox3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/whitebox3" />
+
+    <EditText
+        android:id="@+id/whitebox4"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/whitebox"
+        android:fontFamily="@font/oxygen_bold"
+        android:paddingLeft="10dp"
+        android:paddingBottom="30dp"
+        android:text="11:30 - 12:50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/whitebox3" />
+
+    <EditText
+        android:id="@+id/greenbox4"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="-250dp"
+        android:background="@drawable/greenbox"
+        android:fontFamily="@font/oxygen_bold"
+        android:paddingLeft="20dp"
+        android:paddingTop="5dp"
+        android:text="309"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/whitebox4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.903"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/whitebox4"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/oxygen_bold"
+        android:text="PM 7.1 Install a web content management system IS 1-21"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/whitebox4"
+        app:layout_constraintTop_toTopOf="@+id/whitebox4" />
+
+    <EditText
+        android:id="@+id/navbar"
+        android:layout_width="420dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="-15dp"
+        android:background="@drawable/navbarwhite"
+        android:fontFamily="@font/oxygen_bold"
+        android:paddingLeft="20dp"
+        android:paddingTop="5dp"
+        android:text="309"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/navbar"
+        app:srcCompat="@drawable/group" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/navbar"
+        app:srcCompat="@drawable/ic_baseline_notifications" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/navbar"
+        app:srcCompat="@drawable/planetacometa" />
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="@+id/navbar"
+        app:layout_constraintTop_toTopOf="@+id/navbar"
+        app:srcCompat="@drawable/ratestars" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

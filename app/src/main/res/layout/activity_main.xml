@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="956dp"
+        android:background="#004524">
+
+        <ImageView
+            android:id="@+id/logowhite"
+            android:layout_width="320dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="54dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="54dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/startbutton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo" />
+
+        <Button
+            android:id="@+id/startbutton"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="106dp"
+            android:layout_marginEnd="107dp"
+            android:layout_marginBottom="380dp"
+            android:backgroundTint="#FFFFFF"
+            android:fontFamily="@font/oxygen_bold"
+            android:text="Get Started"
+            android:textColor="#004524"
+            android:textColorHighlight="#FFFFFF"
+            android:textColorLink="#FFFFFF"
+            app:cornerRadius="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/welcome" />
+
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="396dp"
+            android:fontFamily="@font/oxygen_bold"
+            android:text="Welcome to the APEC PetroTechnic Application"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

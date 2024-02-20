@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="-50dp"
+        android:background="@drawable/upbox"
+        android:text="."
+        android:textColor="#294936"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="130dp"
+        android:layout_marginTop="-20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <ImageView
+        android:id="@+id/imageView43"
+        android:layout_width="wrap_content"
+        android:layout_height="180dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView34"
+        app:srcCompat="@drawable/rectangle_44" />
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/oxygen_bold"
+        android:text="About us"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText1" />
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="200dp"
+        android:layout_height="180dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/oxygen"
+        android:text="APEC Petrotechnic is a college that offers educational services for everyone who wants to work in the oil and gas sector and build a successful career. College students study in English. An important point is the nature of the training, based on the use of international standards and requirements of foreign and Kazakhstani oil and gas companies."
+        android:textAlignment="viewEnd"
+        android:textColor="#191919"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView43"
+        app:layout_constraintEnd_toStartOf="@+id/imageView43"
+        app:layout_constraintTop_toTopOf="@+id/imageView43" />
+
+    <ImageView
+        android:id="@+id/imageView46"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView35"
+        app:srcCompat="@drawable/companys" />
+
+    <TextView
+        android:id="@+id/textView36"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/oxygen"
+        android:text="Academic partners of APEC PetroTechnic: Institute of Technology of Southern Alberta – SAIT Polytechnic (Canada); Malta College of Art, Science and Technology (MCAST); Kazakh-British Technical University.  "
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView46"
+        app:layout_constraintStart_toEndOf="@+id/imageView46"
+        app:layout_constraintTop_toTopOf="@+id/imageView46" />
+
+    <TextView
+        android:id="@+id/textView37"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/oxygen"
+        android:text="Our graduates receive diplomas and certificates of international and Kazakhstani standards, which gives them the opportunity for successful employment. Today, 90% of young professionals who have graduated from ARES work at the country's leading oil and gas enterprises."
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView46" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/greenbox"
+        android:text="."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/greenbox"
+        android:text="."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editText2" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/greenbox"
+        android:text="."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/editText5" />
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/greenbox"
+        android:text="."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView47"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/editText2"
+        app:layout_constraintStart_toStartOf="@+id/editText2"
+        app:layout_constraintTop_toTopOf="@+id/editText2"
+        app:srcCompat="@drawable/oil1" />
+
+    <ImageView
+        android:id="@+id/imageView48"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/editText3"
+        app:layout_constraintStart_toStartOf="@+id/editText3"
+        app:layout_constraintTop_toTopOf="@+id/editText3"
+        app:srcCompat="@drawable/oil2" />
+
+    <ImageView
+        android:id="@+id/imageView49"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/editText4"
+        app:layout_constraintStart_toStartOf="@+id/editText4"
+        app:layout_constraintTop_toTopOf="@+id/editText4"
+        app:srcCompat="@drawable/oil3" />
+
+    <ImageView
+        android:id="@+id/imageView50"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/editText5"
+        app:layout_constraintStart_toStartOf="@+id/editText5"
+        app:layout_constraintTop_toTopOf="@+id/editText5"
+        app:srcCompat="@drawable/oil4" />
+
+    <TextView
+        android:id="@+id/textView38"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/oxygen"
+        android:text="Adapted to the modern requirements of the labor market and developed taking into account the requirements of employers"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="7sp"
+        app:layout_constraintBottom_toBottomOf="@+id/editText2"
+        app:layout_constraintEnd_toEndOf="@+id/editText2"
+        app:layout_constraintStart_toStartOf="@+id/editText2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView47" />
+
+    <TextView
+        android:id="@+id/textView39"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/oxygen"
+        android:text="Practice in the specialty profile is aimed at consolidating, expanding, deepening and systematizing knowledge"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="7sp"
+        app:layout_constraintBottom_toBottomOf="@+id/editText3"
+        app:layout_constraintEnd_toEndOf="@+id/editText3"
+        app:layout_constraintStart_toStartOf="@+id/editText3"
+        app:layout_constraintTop_toBottomOf="@+id/imageView48" />
+
+    <TextView
+        android:id="@+id/textView40"
+        android:layout_width="70sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/oxygen"
+        android:text="The atmosphere of the student campus is one of the great advantages of APEC PetroTechnic College."
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="7sp"
+        app:layout_constraintEnd_toEndOf="@+id/editText4"
+        app:layout_constraintStart_toStartOf="@+id/editText4"
+        app:layout_constraintTop_toBottomOf="@+id/imageView49" />
+
+    <TextView
+        android:id="@+id/textView41"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/oxygen"
+        android:text="The training is conducted in English. The training programs are based on an individual approach to each student. "
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="7sp"
+        app:layout_constraintEnd_toEndOf="@+id/editText5"
+        app:layout_constraintStart_toStartOf="@+id/editText5"
+        app:layout_constraintTop_toBottomOf="@+id/imageView50" />
+</androidx.constraintlayout.widget.ConstraintLayout>
