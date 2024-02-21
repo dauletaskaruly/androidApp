@@ -175,20 +175,19 @@
         app:boxCornerRadiusBottomStart="10dp"
         app:boxCornerRadiusTopEnd="10dp"
         app:boxCornerRadiusTopStart="10dp"
-        app:boxStrokeColor="#FFFFFF"
+
         app:boxStrokeWidth="3dp"
-        app:counterTextColor="#FFFFFF"
+
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView">
+        app:layout_constraintStart_toStartOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/oxygen_bold"
             android:hint="Name, Username"
             android:paddingStart="35dp"
             android:textSize="18sp" />
+        <!--            android:fontFamily="@font/oxygen_bold"-->
 
     </com.google.android.material.textfield.TextInputLayout>
 
