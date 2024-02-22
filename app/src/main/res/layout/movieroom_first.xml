@@ -9,7 +9,7 @@
     <EditText
         android:id="@+id/editText1"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="170dp"
         android:layout_marginTop="-50dp"
         android:background="@drawable/upbox"
         android:text="."
@@ -22,23 +22,203 @@
         android:id="@+id/imageView2"
         android:layout_width="wrap_content"
         android:layout_height="130dp"
-        android:layout_marginTop="-20dp"
+        android:layout_marginTop="-5dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logo" />
 
     <TextView
-        android:id="@+id/textView34"
+        android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="10dp"
         android:fontFamily="@font/oxygen_bold"
         android:text="Schedule for today"
-        android:textSize="18sp"
+        android:textColor="#000000"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText1" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
+    <ImageView
+        android:id="@+id/imageView75"
+        android:layout_width="100dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        app:srcCompat="@drawable/beekeeper" />
+
+    <ImageView
+        android:id="@+id/imageView76"
+        android:layout_width="100dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView75"
+        app:layout_constraintTop_toBottomOf="@+id/imageView75"
+        app:srcCompat="@drawable/uialam" />
+
+    <ImageView
+        android:id="@+id/imageView77"
+        android:layout_width="100dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView76"
+        app:layout_constraintTop_toBottomOf="@+id/imageView76"
+        app:srcCompat="@drawable/bratilibrak" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="200dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="-10dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/roundedrectangle"
+        android:text="."
+        android:textColor="#294936"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView75"
+        app:layout_constraintTop_toTopOf="@+id/imageView75" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="200dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="-10dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/roundedrectangle"
+        android:text="."
+        android:textColor="#294936"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView75"
+        app:layout_constraintTop_toTopOf="@+id/imageView76" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="200dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="-10dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/roundedrectangle"
+        android:text="."
+        android:textColor="#294936"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView75"
+        app:layout_constraintTop_toTopOf="@+id/imageView77" />
+
+    <TextView
+        android:id="@+id/textView72"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="«The Beekeeper»"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/editText2"
+        app:layout_constraintStart_toEndOf="@+id/imageView75"
+        app:layout_constraintTop_toTopOf="@+id/editText2" />
+
+    <TextView
+        android:id="@+id/textView73"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-10dp"
+        android:text="«Брат или Брак 3» -  is an exciting film that continues the epic story of the heroes Gauhar and Aidar. In this part, the fate of their relationship is on the verge of destruction due to Aidar's doubts about fatherhood when Gauhar gives birth to twins. This causes insurmountable insecurity and growing tension between the spouses."
+        android:textColor="#FFFFFF"
+        android:textSize="9sp"
+        app:layout_constraintEnd_toEndOf="@+id/editText4"
+        app:layout_constraintStart_toEndOf="@+id/imageView77"
+        app:layout_constraintTop_toBottomOf="@+id/textView76" />
+
+    <TextView
+        android:id="@+id/textView74"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="«Ұялам, но үй алам»"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/editText3"
+        app:layout_constraintStart_toEndOf="@+id/imageView76"
+        app:layout_constraintTop_toTopOf="@+id/editText3" />
+
+    <TextView
+        android:id="@+id/textView75"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-10dp"
+        android:text="Adam Clay lives in the suburbs and is engaged in bee breeding. He is friends with an elderly neighbor, Mrs. Parker, from whom he rents a barn. One day, she becomes a victim of cybercriminals who steal her money, which is why she takes her own life. Realizing that the law is powerless in this situation, Adam decides to use all his powers to take revenge."
+        android:textColor="#FFFFFF"
+        android:textSize="9sp"
+        app:layout_constraintEnd_toEndOf="@+id/editText2"
+        app:layout_constraintStart_toEndOf="@+id/imageView75"
+        app:layout_constraintTop_toBottomOf="@+id/textView72" />
+
+    <TextView
+        android:id="@+id/textView76"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="«Брат или Брак 3»"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/editText4"
+        app:layout_constraintStart_toEndOf="@+id/imageView77"
+        app:layout_constraintTop_toTopOf="@+id/editText4" />
+
+    <TextView
+        android:id="@+id/textView77"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-10dp"
+        android:text="Living in a rented apartment, Syrym and Aizhan decide to arrange a fictitious divorce, using their status as a large family to receive an apartment from the state. At a time when Syrym is worried about no one finding out about their divorce, Aizhan is more worried about how, keeping up with his acquaintances and friends, he would rather buy an apartment."
+        android:textColor="#FFFFFF"
+        android:textSize="9sp"
+        app:layout_constraintEnd_toEndOf="@+id/editText3"
+        app:layout_constraintStart_toEndOf="@+id/imageView76"
+        app:layout_constraintTop_toBottomOf="@+id/textView74" />
+
+    <Button
+        android:id="@+id/button2"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="-15dp"
+        android:layout_marginBottom="-10dp"
+        android:fontFamily="@font/oxygen_bold"
+        android:text="Book ➙"
+        android:textAllCaps="false"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="@+id/editText2"
+        app:layout_constraintEnd_toEndOf="@+id/editText2" />
+
+    <Button
+        android:id="@+id/button3"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="-15dp"
+        android:layout_marginBottom="-10dp"
+        android:fontFamily="@font/oxygen_bold"
+        android:text="Book ➙"
+        android:textAllCaps="false"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="@+id/editText4"
+        app:layout_constraintEnd_toEndOf="@+id/editText4" />
+
+    <Button
+        android:id="@+id/button4"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="-15dp"
+        android:layout_marginBottom="-10dp"
+        android:fontFamily="@font/oxygen_bold"
+        android:text="Book ➙"
+        android:textAllCaps="false"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="@+id/editText3"
+        app:layout_constraintEnd_toEndOf="@+id/editText3" />
 </androidx.constraintlayout.widget.ConstraintLayout>
