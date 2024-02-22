@@ -3,8 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="."> А ВОТ ТУТ ОН ТУПО НЕ ВИДИТ ИЗ ЗА ТОГО ЧТО ЕГО НЕТ В МАНИФЕСТЕ
-
+    tools:context=".">
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"

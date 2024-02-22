@@ -8,17 +8,17 @@ import android.view.View
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 
-class MainActivity : AppCompatActivity() {
+class RegistrationPage : AppCompatActivity() {
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main) // Устанавливаем разметку для активности
+        setContentView(R.layout.page12) // Устанавливаем разметку для активности
 
-        val button: Button = findViewById(R.id.startbutton)
-        button.setOnClickListener {
-            val intent = Intent(this, RegistrationPage::class.java)
-            startActivity(intent)
-        }
+//        val button: Button = findViewById(R.id.startbutton)
+//        button.setOnClickListener {
+//            val intent = Intent(this, Main::class.java)
+//            startActivity(intent)
+//        }
 
 
 

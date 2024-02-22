@@ -46,4 +46,8 @@
     <string name="todo">TODO</string>
     <string name="get_started">Get Started</string>
     <string name="welcome_to_the_apec_petrotechnic_application">Welcome to the APEC PetroTechnic Application</string>
+    <string name="title_activity_main231">MainActivity231</string>
+    <string name="title_activity_srr">SRR</string>
+    <string name="title_activity_registration_page">RegistrationPage</string>
+    <string name="title_activity_registration">Registration</string>
 </resources>

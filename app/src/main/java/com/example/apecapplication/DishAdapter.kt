@@ -29,4 +29,5 @@ class DishAdapter(private val dishes: List<Dish>) :
     }
 
     override fun getItemCount() = dishes.size
+
 }
