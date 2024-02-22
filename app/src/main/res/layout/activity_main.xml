@@ -55,7 +55,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="396dp"
             android:fontFamily="@font/oxygen_bold"
-            android:text="@string/welcome_to_the_apec_petrotechnic_application"
+            android:text="Welcome to the APEC PetroTechnic Booking App"
             android:textAlignment="center"
             android:textColor="#FFFFFF"
             android:textSize="24sp"
