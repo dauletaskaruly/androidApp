@@ -1,12 +1,14 @@
 package com.example.apecapplication
 
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.apecapplication.R
 
 class CustomRecyclerViewAdapter(
     private val context: Context,
@@ -30,6 +32,13 @@ class CustomRecyclerViewAdapter(
 
         holder.dishNameTextView.text = dishName
         holder.imageViewDish.setImageResource(dishImageResId)
+        holder.itemView.setOnClickListener {
+            val intent = Intent(context, DishDetailActivity::class.java)
+            intent.putExtra("dish_name", dishName)
+            // Если вам также нужно передать изображение блюда, вы можете использовать:
+            intent.putExtra("dish_image", dishImageResId)
+            context.startActivity(intent)
+        }
     }
 
     override fun getItemCount(): Int {

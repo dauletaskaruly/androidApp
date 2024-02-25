@@ -1,34 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:padding="16dp">
 
-    <!-- Изображение блюда -->
     <ImageView
         android:id="@+id/imageViewDish"
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/borsh" />
+        android:src="@drawable/borsh"
+        android:layout_centerHorizontal="true" />
 
-    <!-- Описание блюда -->
     <TextView
-        android:id="@+id/textViewDescription"
+        android:id="@+id/textViewDishName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/imageViewDish"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
-        android:text="Описание блюда здесь"
-        android:textSize="18sp" />
+        android:text="Dish Name"
+        android:textStyle="bold" />
 
-    <!-- Кнопка "Купить" -->
     <Button
-        android:id="@+id/buttonBuy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/textViewDescription"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="24dp"
-        android:text="Купить" />
+        android:text="КУПИТЬ"
+        tools:ignore="HardcodedText" />
+    <!-- Добавьте здесь остальные элементы для отображения дополнительной информации о блюде -->
 
 </RelativeLayout>

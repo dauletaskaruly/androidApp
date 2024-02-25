@@ -16,7 +16,7 @@
             android:name=".DishDetailActivity"
             android:exported="false" />
         <activity android:name=".ActivityDish" />
-        <activity android:name=".RegistrationPage"></activity>
+        <activity android:name=".RegistrationPage" />
         <activity
             android:name=".MainActivity"
             android:exported="true"
