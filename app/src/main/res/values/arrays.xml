@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="WrongFolder">
+    <string-array name="dishes_array">
+        <item>Борщ|@drawable/borsh</item>
+        <item>Спагетти|@drawable/sphagetti</item>
+        <item>Вареники|@drawable/vareniky</item>
+        <item>Салат|@drawable/saladd</item>
+
+    </string-array>
+</resources>
