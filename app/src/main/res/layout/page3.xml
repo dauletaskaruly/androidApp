@@ -99,7 +99,7 @@
         app:passwordToggleTint="#FFFFFF">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/email"
+            android:id="@+id/dodixxx"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/oxygen_bold"

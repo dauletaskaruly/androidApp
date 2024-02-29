@@ -84,9 +84,9 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="8dp"
         android:layout_weight="1"
-        app:layout_constraintBottom_toBottomOf="@+id/textInputLayout2"
-        app:layout_constraintStart_toStartOf="@+id/textInputLayout2"
-        app:layout_constraintTop_toTopOf="@+id/textInputLayout2"
+        app:layout_constraintBottom_toBottomOf="@+id/dodi"
+        app:layout_constraintStart_toStartOf="@+id/dodi"
+        app:layout_constraintTop_toTopOf="@+id/dodi"
         app:srcCompat="@drawable/user" />
 
     <com.google.android.material.textfield.TextInputLayout
@@ -106,11 +106,11 @@
         app:hintTextAppearance="@style/TextAppearance.AppCompat.Body1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/dodi"
         app:passwordToggleTint="#FFFFFF">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/email"
+            android:id="@+id/dodixxx"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/oxygen_bold"
@@ -166,10 +166,10 @@
         app:srcCompat="@drawable/password" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout2"
+        android:id="@+id/dodi"
         android:layout_width="250dp"
         android:layout_height="50dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="420dp"
         android:textColorHint="#939393"
         app:boxCornerRadiusBottomEnd="10dp"
         app:boxCornerRadiusBottomStart="10dp"
@@ -179,7 +179,8 @@
         app:boxStrokeWidth="3dp"
 
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
