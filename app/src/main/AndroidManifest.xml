@@ -18,6 +18,9 @@
         android:theme="@style/Theme.APECApplication"
         tools:targetApi="31">
         <activity
+            android:name=".WFWEF"
+            android:exported="false" />
+        <activity
             android:name=".CinemaHallActivity"
             android:exported="false" />
         <activity
