@@ -18,6 +18,12 @@
         android:theme="@style/Theme.APECApplication"
         tools:targetApi="31">
         <activity
+            android:name=".CinemaHallActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityFilms"
+            android:exported="false" />
+        <activity
             android:name=".Orders"
             android:exported="false" />
         <activity
