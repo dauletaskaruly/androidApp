@@ -18,10 +18,13 @@
         android:theme="@style/Theme.APECApplication"
         tools:targetApi="31">
         <activity
-            android:name=".WFWEF"
+            android:name=".BookDetailActivity"
             android:exported="false" />
         <activity
-            android:name=".CinemaHallActivity"
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityCinema"
             android:exported="false" />
         <activity
             android:name=".ActivityFilms"
@@ -29,16 +32,16 @@
         <activity
             android:name=".Orders"
             android:exported="false" />
-        <activity
-            android:name=".bottom_nav"
-            android:exported="false"
-            android:label="@string/title_activity_bottom_nav" />
+
         <activity
             android:name=".DishDetailActivity"
             android:exported="false" />
         <activity android:name=".ActivityDish" />
-        <activity android:name=".RegistrationPage" />
+        <activity android:name=".LoginActivity" />
+<!--        <activity android:name="" />-->
         <activity android:name=".Library" />
+        <activity android:name=".OrdersBook" />
+<!--        <activity android:name="." />-->
         <activity
             android:name=".MainActivity"
             android:exported="true"

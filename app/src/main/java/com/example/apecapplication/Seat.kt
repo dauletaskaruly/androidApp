@@ -1,5 +1,1 @@
-package com.example.apecapplication
-data class Seat(
-    val number: Int,
-    var isBooked: Boolean = false
-)
+data class Seat(val place: Int, val isOccupied: Boolean)

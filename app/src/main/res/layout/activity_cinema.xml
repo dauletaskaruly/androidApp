@@ -10,7 +10,7 @@
 
     </ImageView>
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerViewBooks"
+        android:id="@+id/recyclerCinemaHall"
         android:layout_width="match_parent"
         android:layout_below="@id/head"
         android:layout_height="match_parent" />

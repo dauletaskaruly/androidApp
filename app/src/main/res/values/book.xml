@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="WrongFolder">
+    <string-array name="book_array">
+        <item>Триумфиальная Арка|@drawable/book1</item>
+        <item>Война и мир|@drawable/book2</item>
+        <item>Белый клык|@drawable/book3</item>
+        <item>Мария Ремарк|@drawable/book4</item>
+
+    </string-array>
+</resources>

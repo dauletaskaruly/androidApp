@@ -1,0 +1,26 @@
+<!-- item_order.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textViewOrderNameBook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:padding="8dp"
+        android:text="Order Name" />
+
+    <TextView
+        android:id="@+id/textViewCustomerNameBook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:padding="8dp"
+        android:text="Customer Name" />
+
+    <!-- Другие элементы интерфейса для отображения дополнительной информации о заказе -->
+
+</LinearLayout>
