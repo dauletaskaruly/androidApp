@@ -19,24 +19,26 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
-        android:textSize="24sp"
+        android:layout_below="@+id/imageViewBook"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="-296dp"
         android:text="Dish Name"
+        android:textSize="24sp"
         android:textStyle="bold" />
 
     <Button
         android:id="@+id/orderBook"
-        android:layout_width="198dp"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-
         android:layout_below="@+id/customerNameEditTextbook"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="96dp"
         android:layout_marginTop="75dp"
         android:layout_marginEnd="101dp"
+        android:backgroundTint="#004524"
         android:text="Order"
+        app:cornerRadius="12dp"
         tools:ignore="HardcodedText" />
 
     <com.google.android.material.textfield.TextInputLayout
@@ -51,8 +53,10 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_marginTop="357dp"
-        android:hint="Введите имя"
-        android:minHeight="48dp" />
+        android:hint="What is your name?"
+        android:minHeight="48dp"
+        android:paddingLeft="10sp"
+        android:textSize="16sp" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"

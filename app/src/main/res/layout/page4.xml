@@ -207,70 +207,6 @@
         app:layout_constraintTop_toTopOf="@+id/whitebox4"
         tools:ignore="HardcodedText,TextSizeCheck" />
 
-    <EditText
-        android:id="@+id/navbar"
-        android:layout_width="420dp"
-        android:layout_height="70dp"
-        android:layout_marginBottom="-15dp"
-        android:background="@drawable/navbarwhite"
-        android:fontFamily="@font/oxygen_bold"
-        android:paddingStart="20dp"
-        android:paddingTop="5dp"
-        android:text="309"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="HardcodedText,LabelFor,RtlSymmetry,TextFields"
-        android:autofillHints="" />
-
-    <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="150dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/navbar"
-        app:srcCompat="@drawable/group"
-        tools:ignore="ContentDescription" />
-
-    <ImageView
-        android:id="@+id/imageView10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="50dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/navbar"
-        app:srcCompat="@drawable/ic_baseline_notifications"
-        android:contentDescription="TODO"
-        tools:ignore="ContentDescription,HardcodedText" />
-
-    <ImageView
-        android:id="@+id/imageView16"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="12dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/navbar"
-        app:srcCompat="@drawable/planetacometa"
-        android:contentDescription="TODO"
-        tools:ignore="ContentDescription,HardcodedText" />
-
-    <ImageView
-        android:id="@+id/imageView20"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
-        android:layout_marginStart="150dp"
-        android:layout_marginTop="12dp"
-        app:layout_constraintStart_toStartOf="@+id/navbar"
-        app:layout_constraintTop_toTopOf="@+id/navbar"
-        app:srcCompat="@drawable/ratestars"
-        android:contentDescription="TODO"
-        tools:ignore="ContentDescription,HardcodedText" />
-
     <ImageView
         android:id="@+id/imageView9"
         android:layout_width="100dp"
@@ -354,5 +290,15 @@
         app:layout_constraintTop_toTopOf="@+id/whitebox4"
         app:srcCompat="@drawable/arrow"
         tools:ignore="ContentDescription" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="@drawable/navbar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/menu_main"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
