@@ -27,7 +27,14 @@
             android:name=".ActivityCinema"
             android:exported="false" />
         <activity
+            android:name=".LockerActivity"
+            android:exported="false" />
+
+        <activity
             android:name=".ActivityFilms"
+            android:exported="false" />
+        <activity
+            android:name=".MainMenu"
             android:exported="false" />
         <activity
             android:name=".Orders"

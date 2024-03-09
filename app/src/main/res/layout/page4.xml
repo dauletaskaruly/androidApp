@@ -6,6 +6,179 @@
     android:layout_height="match_parent"
     android:background="#294936">
 
+
+    <androidx.cardview.widget.CardView
+        android:id='@+id/WardrobeLink'
+        android:layout_width="374dp"
+        android:layout_height="137dp"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CanteenLink"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView9133"
+                android:layout_width="155dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                app:layout_constraintBottom_toBottomOf="@+id/whitebox1"
+                app:layout_constraintStart_toStartOf="@+id/whitebox1"
+                app:layout_constraintTop_toTopOf="@+id/whitebox1"
+                app:srcCompat="@drawable/wardrobe"
+                tools:ignore="ContentDescription,DuplicateIds" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/oxygen"
+                    android:text="Wardrobe"
+                    android:textSize="30dp" />
+
+                <TextView
+                    android:id="@+id/dew3232e"
+                    android:layout_width="wrap_content"
+                    android:layout_height="59dp"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="@font/oxygen"
+                    android:text="Our college's wardrobe provides a convenient place to store students' outwear and personal belongings, ensuring order and comfort."
+                    android:textColor="#000000"
+                    android:textSize="11sp"
+                    app:layout_constraintEnd_toEndOf="@+id/whitebox1"
+                    app:layout_constraintStart_toEndOf="@+id/imageView9"
+                    app:layout_constraintTop_toTopOf="@+id/whitebox1"
+                    tools:ignore="HardcodedText,TextSizeCheck" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id='@+id/CanteenLink'
+        android:layout_width="374dp"
+        android:layout_height="137dp"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="152dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                app:layout_constraintBottom_toBottomOf="@+id/whitebox1"
+                app:layout_constraintStart_toStartOf="@+id/whitebox1"
+                app:layout_constraintTop_toTopOf="@+id/whitebox1"
+                app:srcCompat="@drawable/canteen"
+                tools:ignore="ContentDescription" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="15dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/oxygen"
+                    android:textSize="30dp"
+                    android:text="Canteen"
+                    />
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="180dp"
+                    android:layout_height="65dp"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="@font/oxygen"
+                    android:text="The canteen of our college provides a variety of meals for students and staff, providing a convenient place for eating and socializing"
+                    android:textColor="#000000"
+                    android:textSize="11sp"
+                    app:layout_constraintEnd_toEndOf="@+id/whitebox1"
+                    app:layout_constraintStart_toEndOf="@+id/imageView9"
+                    app:layout_constraintTop_toTopOf="@+id/whitebox1"
+                    tools:ignore="HardcodedText,TextSizeCheck" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/LibraryLink"
+        android:layout_width="374dp"
+        android:layout_height="137dp"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/WardrobeLink"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id='@+id/Libraryimg'
+                android:layout_width="160dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                app:layout_constraintBottom_toBottomOf="@+id/whitebox1"
+                app:layout_constraintStart_toStartOf="@+id/whitebox1"
+                app:layout_constraintTop_toTopOf="@+id/whitebox1"
+                app:srcCompat="@drawable/library"
+                tools:ignore="ContentDescription" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/oxygen"
+                    android:text="Library"
+                    android:textSize="30dp" />
+
+                <TextView
+                    android:id="@+id/textViewr31"
+                    android:layout_width="183dp"
+                    android:layout_height="76dp"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="@font/oxygen"
+                    android:text="The cinema hall of our college provides students with the opportunity to enjoy films and cultural events in a comfortable and entertaining atmosphere"
+                    android:textColor="#000000"
+                    android:textSize="11sp"
+                    app:layout_constraintEnd_toEndOf="@+id/whitebox1"
+                    app:layout_constraintStart_toEndOf="@+id/imageView9"
+                    app:layout_constraintTop_toTopOf="@+id/whitebox1"
+                    tools:ignore="HardcodedText,TextSizeCheck" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
     <ImageView
         android:id="@+id/imageView5"
         android:layout_width="409dp"
@@ -23,13 +196,15 @@
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
+        android:textAlignment="center"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="12dp"
         android:fontFamily="@font/oxygen_bold"
         android:text="What do you want to book?"
         android:textColor="#FFFFFF"
-        android:textSize="20sp"
+        android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView5"
         tools:ignore="HardcodedText" />
@@ -60,10 +235,10 @@
         tools:ignore="HardcodedText" />
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/welcomeUser"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="40dp"
         android:fontFamily="@font/oxygen_bold"
         android:text="Daulet Askaruly"
         android:textColor="#000000"
@@ -83,222 +258,17 @@
         app:srcCompat="@drawable/wave"
         tools:ignore="ContentDescription,ImageContrastCheck" />
 
-    <EditText
-        android:id="@+id/whitebox1"
-        android:layout_width="300dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/whitebox"
-        android:fontFamily="@font/oxygen_bold"
-        android:paddingStart="170dp"
-        android:paddingBottom="65dp"
-        android:text="Canteen"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
-        tools:ignore="Autofill,HardcodedText,LabelFor,RtlSymmetry,TextFields" />
-
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="180dp"
-        android:layout_height="65dp"
-        android:layout_marginTop="30dp"
-        android:fontFamily="@font/oxygen"
-        android:text="The canteen of our college provides a variety of meals for students and staff, providing a convenient place for eating and socializing"
-        android:textColor="#000000"
-        android:textSize="11sp"
-        app:layout_constraintEnd_toEndOf="@+id/whitebox1"
-        app:layout_constraintStart_toEndOf="@+id/imageView9"
-        app:layout_constraintTop_toTopOf="@+id/whitebox1"
-        tools:ignore="HardcodedText,TextSizeCheck" />
-
-    <EditText
-        android:id="@+id/whitebox2"
-        android:layout_width="300dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/whitebox"
-        android:fontFamily="@font/oxygen_bold"
-        android:paddingStart="175dp"
-        android:paddingBottom="65dp"
-        android:text="Library"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/whitebox1"
-        tools:ignore="Autofill,HardcodedText,LabelFor,RtlSymmetry,TextFields"
-        android:inputType="" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="180dp"
-        android:layout_height="65dp"
-        android:layout_marginTop="30dp"
-        android:fontFamily="@font/oxygen"
-        android:text="The library of our college is a modern information space providing students with learning resources, providing a quiet and supportive atmosphere"
-        android:textColor="#000000"
-        android:textSize="10sp"
-        app:layout_constraintEnd_toEndOf="@+id/whitebox2"
-        app:layout_constraintStart_toEndOf="@+id/imageView80"
-        app:layout_constraintTop_toTopOf="@+id/whitebox2"
-        tools:ignore="HardcodedText,SmallSp,TextSizeCheck" />
-
-    <EditText
-        android:id="@+id/whitebox3"
-        android:layout_width="300dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/whitebox"
-        android:fontFamily="@font/oxygen_bold"
-        android:paddingStart="160dp"
-        android:paddingBottom="65dp"
-        android:text="Movieroom"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/whitebox2"
-        tools:ignore="Autofill,HardcodedText,LabelFor,RtlSymmetry,TextFields" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="180dp"
-        android:layout_height="65dp"
-        android:layout_marginTop="30dp"
-        android:fontFamily="@font/oxygen"
-        android:text="The cinema hall of our college provides students with the opportunity to enjoy films and cultural events in a comfortable and entertaining atmosphere"
-        android:textColor="#000000"
-        android:textSize="10sp"
-        app:layout_constraintEnd_toEndOf="@+id/whitebox3"
-        app:layout_constraintStart_toEndOf="@+id/imageView79"
-        app:layout_constraintTop_toTopOf="@+id/whitebox3"
-        tools:ignore="HardcodedText,SmallSp,TextSizeCheck" />
-
-    <EditText
-        android:id="@+id/whitebox4"
-        android:layout_width="300dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/whitebox"
-        android:fontFamily="@font/oxygen_bold"
-        android:paddingStart="165dp"
-        android:paddingBottom="65dp"
-        android:text="Wardrobe"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/whitebox3"
-        tools:ignore="Autofill,HardcodedText,LabelFor,RtlSymmetry,TextFields" />
-
-    <TextView
-        android:id="@+id/textView12"
-        android:layout_width="180dp"
-        android:layout_height="65dp"
-        android:layout_marginTop="30dp"
-        android:fontFamily="@font/oxygen"
-        android:text="Our college's wardrobe provides a convenient place to store students' outwear and personal belongings, ensuring order and comfort."
-        android:textColor="#000000"
-        android:textSize="11sp"
-        app:layout_constraintEnd_toEndOf="@+id/whitebox4"
-        app:layout_constraintStart_toEndOf="@+id/imageView78"
-        app:layout_constraintTop_toTopOf="@+id/whitebox4"
-        tools:ignore="HardcodedText,TextSizeCheck" />
-
-    <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="100dp"
-        android:layout_height="80dp"
-        android:layout_marginStart="10dp"
-        app:layout_constraintBottom_toBottomOf="@+id/whitebox1"
-        app:layout_constraintStart_toStartOf="@+id/whitebox1"
-        app:layout_constraintTop_toTopOf="@+id/whitebox1"
-        app:srcCompat="@drawable/canteen"
-        tools:ignore="ContentDescription" />
-
-    <ImageView
-        android:id="@+id/imageView78"
-        android:layout_width="100dp"
-        android:layout_height="80dp"
-        android:layout_marginStart="10dp"
-        app:layout_constraintBottom_toBottomOf="@+id/whitebox4"
-        app:layout_constraintStart_toStartOf="@+id/whitebox4"
-        app:layout_constraintTop_toTopOf="@+id/whitebox4"
-        app:srcCompat="@drawable/wardrobe"
-        tools:ignore="ContentDescription" />
-
-    <ImageView
-        android:id="@+id/imageView79"
-        android:layout_width="100dp"
-        android:layout_height="80dp"
-        android:layout_marginStart="10dp"
-        app:layout_constraintBottom_toBottomOf="@+id/whitebox3"
-        app:layout_constraintStart_toStartOf="@+id/whitebox3"
-        app:layout_constraintTop_toTopOf="@+id/whitebox3"
-        app:srcCompat="@drawable/movieroom"
-        tools:ignore="ContentDescription" />
-
-    <ImageView
-        android:id="@+id/imageView80"
-        android:layout_width="100dp"
-        android:layout_height="80dp"
-        android:layout_marginStart="10dp"
-        app:layout_constraintBottom_toBottomOf="@+id/whitebox2"
-        app:layout_constraintStart_toStartOf="@+id/whitebox2"
-        app:layout_constraintTop_toTopOf="@+id/whitebox2"
-        app:srcCompat="@drawable/library"
-        tools:ignore="ContentDescription,ImageContrastCheck" />
-
-    <ImageView
-        android:id="@+id/imageView81"
-        android:layout_width="20dp"
-        android:layout_height="20dp"
-        android:layout_marginTop="6dp"
-        app:layout_constraintEnd_toEndOf="@+id/whitebox1"
-        app:layout_constraintTop_toTopOf="@+id/whitebox1"
-        app:srcCompat="@drawable/arrow"
-        tools:ignore="ContentDescription" />
-
-    <ImageView
-        android:id="@+id/imageView82"
-        android:layout_width="20dp"
-        android:layout_height="20dp"
-        android:layout_marginTop="6dp"
-        app:layout_constraintEnd_toEndOf="@+id/whitebox2"
-        app:layout_constraintTop_toTopOf="@+id/whitebox2"
-        app:srcCompat="@drawable/arrow"
-        tools:ignore="ContentDescription" />
-
-    <ImageView
-        android:id="@+id/imageView83"
-        android:layout_width="20dp"
-        android:layout_height="20dp"
-        android:layout_marginTop="6dp"
-        app:layout_constraintEnd_toEndOf="@+id/whitebox3"
-        app:layout_constraintTop_toTopOf="@+id/whitebox3"
-        app:srcCompat="@drawable/arrow"
-        tools:ignore="ContentDescription" />
-
-    <ImageView
-        android:id="@+id/imageView84"
-        android:layout_width="20dp"
-        android:layout_height="20dp"
-        android:layout_marginTop="6dp"
-        app:layout_constraintEnd_toEndOf="@+id/whitebox4"
-        app:layout_constraintTop_toTopOf="@+id/whitebox4"
-        app:srcCompat="@drawable/arrow"
-        tools:ignore="ContentDescription" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:layout_width="0dp"
-        android:layout_height="50dp"
-        android:background="@drawable/navbar"
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="4dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/menu_main"/>
-
+        app:menu="@menu/main_menu"
+        tools:ignore="MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>

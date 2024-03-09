@@ -41,7 +41,7 @@ class LoginActivity : AppCompatActivity() {
                 val db = dbHelper.authenticateUser(username, password)
                 if(db) {
                     Toast.makeText(this, "Пользователь $username авторизован", Toast.LENGTH_LONG).show()
-                    val intent = Intent(this, ActivityDish::class.java)
+                    val intent = Intent(this, Library::class.java)
                     startActivity(intent)
                 }
                 else{
