@@ -28,6 +28,8 @@ class CustomRecyclerViewAdapter(
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val dishInfo = dishes[position].split("|")
         val dishName = dishInfo[0]
+        val dishAmount = dishInfo[2].toInt()
+
         val dishImageResId = context.resources.getIdentifier(dishInfo[1], "drawable", context.packageName)
 
         holder.dishNameTextView.text = dishName
@@ -35,6 +37,7 @@ class CustomRecyclerViewAdapter(
         holder.itemView.setOnClickListener {
             val intent = Intent(context, DishDetailActivity::class.java)
             intent.putExtra("dish_name", dishName)
+            intent.putExtra("dish_amount", dishAmount)
             // Если вам также нужно передать изображение блюда, вы можете использовать:
             intent.putExtra("dish_image", dishImageResId)
             context.startActivity(intent)

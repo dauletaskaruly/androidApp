@@ -17,34 +17,52 @@ class DishDetailActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         setContentView(R.layout.activity_dish_detail)
 
+        var borshAmount = 10
         // Получение данных о блюде из интента
         val dishName = intent.getStringExtra("dish_name")
-        val dishImg = intent.getStringExtra("dish_image")
-
         val textView = findViewById<TextView>(R.id.textViewDishName)
         val dishImgResourceId = intent.getIntExtra("dish_image", 0)
+
+
+        val amount = findViewById<TextView>(R.id.amount)
+
 
         val imgView = findViewById<ImageView>(R.id.imageViewDish)
         // Установка названия блюда
         textView.text = dishName
         imgView.setImageResource(dishImgResourceId)
-        val buyButton: Button = findViewById(R.id.order)
+
+
 
         val customerNameEditText: EditText = findViewById(R.id.customerNameEditText)
 
+        amount.text = borshAmount.toString()
 
         val dishNameTextView: TextView = findViewById(R.id.textViewDishName)
 
+        val buyButton: Button = findViewById(R.id.order)
         buyButton.setOnClickListener {
-            val customerName: String = customerNameEditText.text.toString()
-            val dishName: String = dishNameTextView.text.toString()
+            if(customerNameEditText.text.toString().trim().isNotEmpty()) {
+                val customerName: String = customerNameEditText.text.toString()
+                val dishName: String = dishNameTextView.text.toString()
 
-            val dbHelper = DatabaseHelper(this)
-            dbHelper.addOrder(customerName, dishName)
-            Toast.makeText(this, "Заказ добавлен в базу данных", Toast.LENGTH_SHORT).show()
+                if (dishName == "Borsch") {
+                    borshAmount-- // Уменьшаем количество борща на 1 при заказе
+                    amount.text = borshAmount.toString() // Обновляем отображение количества
+                }
+
+                val dbHelper = DatabaseHelper(this)
+
+
+                dbHelper.addOrder(customerName, dishName, dishImgResourceId)
+                Toast.makeText(this, "Заказ добавлен в базу данных", Toast.LENGTH_SHORT).show()
+
+            }else{
+                Toast.makeText(this, "Введите имя", Toast.LENGTH_SHORT).show()
+
+            }
         }
 
 

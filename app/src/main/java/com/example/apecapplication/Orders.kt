@@ -17,10 +17,12 @@ class Orders : AppCompatActivity() {
         val dbHelper = DatabaseHelper(this)
         val orders = dbHelper.getAllOrders()
 
+
+
+
         val recyclerView: RecyclerView = findViewById(R.id.recyclerView)
         val adapter = OrderAdapter(orders)
         recyclerView.adapter = adapter
-
         recyclerView.layoutManager = LinearLayoutManager(this)
 
         val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottom_navigation)
@@ -48,4 +50,6 @@ class Orders : AppCompatActivity() {
             }
         }
     }
+
+
 }

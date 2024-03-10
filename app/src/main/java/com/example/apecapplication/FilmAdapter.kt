@@ -28,12 +28,13 @@ class FilmAdapter(
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val filmInfo = films[position].split("|")
         val filmName = filmInfo[0]
+
         val filmImageResId = context.resources.getIdentifier(filmInfo[1], "drawable", context.packageName)
 
         holder.filmNameTextView.text = filmName
         holder.imageViewFilm.setImageResource(filmImageResId)
         holder.itemView.setOnClickListener {
-            val intent = Intent(context, ActivityCinema::class.java)
+            val intent = Intent(context, ActivityFilms::class.java)
             intent.putExtra("film_name", filmName)
             // Если вам также нужно передать изображение блюда, вы можете использовать:
             intent.putExtra("film_image", filmImageResId)

@@ -13,6 +13,7 @@ class DbHelperFilm(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME, 
         private const val TABLE_FILM = "film"
         private const val COLUMN_FILM_NUMBER = "number"
         private const val COLUMN_FILM_NAME = "name"
+
     }
 
     override fun onCreate(db: SQLiteDatabase?) {

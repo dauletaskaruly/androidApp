@@ -25,6 +25,7 @@ class ActivityFilms : AppCompatActivity(), FilmItemClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.film_activity)
+
         dbHelper = DbHelperFilm(this)
         recyclerView = findViewById(R.id.recyclerViewFilm)
         recyclerView.layoutManager = GridLayoutManager(this, 7)

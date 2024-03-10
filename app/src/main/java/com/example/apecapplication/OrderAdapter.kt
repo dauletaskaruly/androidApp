@@ -1,6 +1,7 @@
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.apecapplication.Order
@@ -11,10 +12,14 @@ class OrderAdapter(private val orders: List<Order>) : RecyclerView.Adapter<Order
     inner class OrderViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         private val orderNameTextView: TextView = itemView.findViewById(R.id.textViewOrderName)
         private val customerNameTextView: TextView = itemView.findViewById(R.id.textViewCustomerName)
+        private val imageDish: ImageView = itemView.findViewById(R.id.orderedImg)
 
         fun bind(order: Order) {
             orderNameTextView.text = order.dishName
             customerNameTextView.text = order.customerName
+            imageDish.setImageResource(order.image)
+//            val resourceId = context.resources.getIdentifier(order.imageResPath, "drawable", context.packageName)
+//            imageDish.setImageResource(resourceId)
         }
     }
 

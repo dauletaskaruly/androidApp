@@ -2,10 +2,10 @@
 <resources xmlns:tools="http://schemas.android.com/tools"
     tools:ignore="WrongFolder">
     <string-array name="dishes_array">
-        <item>Borsch|@drawable/borcsh</item>
-        <item>Spaghetti|@drawable/spaghetti</item>
-        <item>Lasagna|@drawable/lasagna</item>
-        <item>Salad|@drawable/salat</item>
+        <item>Borsch|@drawable/borcsh|10</item>
+        <item>Spaghetti|@drawable/spaghetti|10</item>
+        <item>Lasagna|@drawable/lasagna|10</item>
+        <item>Salad|@drawable/salat|10</item>
 
     </string-array>
 </resources>

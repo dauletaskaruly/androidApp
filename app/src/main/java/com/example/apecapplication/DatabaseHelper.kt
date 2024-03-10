@@ -11,7 +11,8 @@ class DatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME
         val createTableQuery = "CREATE TABLE $TABLE_ORDERS (" +
                 "$COLUMN_ID INTEGER PRIMARY KEY AUTOINCREMENT," +
                 "$COLUMN_CUSTOMER_NAME TEXT," +
-                "$COLUMN_DISH_NAME TEXT)"
+                "$COLUMN_DISH_NAME TEXT," +
+                "$COLUMN_IMAGE INTEGER)"
 
         db.execSQL(createTableQuery)
     }
@@ -21,11 +22,12 @@ class DatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME
         onCreate(db)
     }
 
-    fun addOrder(customerName: String, dishName: String): Long {
+    fun addOrder(customerName: String, dishName: String, image: Int): Long {
         val db = this.writableDatabase
         val values = ContentValues()
         values.put(COLUMN_CUSTOMER_NAME, customerName)
         values.put(COLUMN_DISH_NAME, dishName)
+        values.put(COLUMN_IMAGE, image)
         return db.insert(TABLE_ORDERS, null, values)
     }
 
@@ -39,7 +41,8 @@ class DatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME
                 val id = it.getInt(it.getColumnIndex(COLUMN_ID))
                 val customerName = it.getString(it.getColumnIndex(COLUMN_CUSTOMER_NAME))
                 val dishName = it.getString(it.getColumnIndex(COLUMN_DISH_NAME))
-                orders.add(Order(id, customerName, dishName))
+                val image = it.getInt(it.getColumnIndex(COLUMN_IMAGE))
+                orders.add(Order(id, customerName, dishName, image))
             }
         }
         return orders
@@ -51,6 +54,7 @@ class DatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME
         private const val COLUMN_ID = "id"
         private const val COLUMN_CUSTOMER_NAME = "customer_name"
         private const val COLUMN_DISH_NAME = "dish_name"
+        private const val COLUMN_IMAGE = "image"
     }
 
 

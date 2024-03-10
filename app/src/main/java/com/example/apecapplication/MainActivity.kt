@@ -1,10 +1,12 @@
 package com.example.apecapplication
 
+import DatabaseHelper
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
+
 
 class MainActivity : AppCompatActivity() {
     @SuppressLint("MissingInflatedId")
@@ -14,7 +16,7 @@ class MainActivity : AppCompatActivity() {
 
         val button: Button = findViewById(R.id.startbutton)
         button.setOnClickListener {
-            val intent = Intent(this, ActivityCinema::class.java)
+            val intent = Intent(this, ActivityDish::class.java)
             startActivity(intent)
         }
 
