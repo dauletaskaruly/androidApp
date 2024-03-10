@@ -1,0 +1,12 @@
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/textViewFilm"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:background="@drawable/grid_item_background"
+    android:gravity="center"
+    android:text="13"
+    android:layout_marginTop="22dp"
+    android:textColor="#FFFFFF"
+    android:textSize="14sp"
+    tools:ignore="SmallSp" />

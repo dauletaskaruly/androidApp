@@ -17,6 +17,11 @@ class MainMenu : AppCompatActivity() {
             val intent = Intent(this, ActivityDish::class.java)
             startActivity(intent)
         }
+        val film: CardView = findViewById(R.id.WardrobeLink)
+        wardrobe.setOnClickListener {
+            val intent = Intent(this, ActivityDish::class.java)
+            startActivity(intent)
+        }
 
         val canteen: CardView = findViewById(R.id.CanteenLink)
         canteen.setOnClickListener {
@@ -24,9 +29,9 @@ class MainMenu : AppCompatActivity() {
             startActivity(intent)
         }
 
-        val library: CardView = findViewById(R.id.LibraryLink)
-        library.setOnClickListener {
-            val intent = Intent(this, Library::class.java)
+        val cinema: CardView = findViewById(R.id.CinemaLink)
+        cinema.setOnClickListener {
+            val intent = Intent(this, ActivityFilms::class.java)
             startActivity(intent)
         }
     }

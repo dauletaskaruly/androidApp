@@ -193,6 +193,66 @@
         android:contentDescription="TODO"
         tools:ignore="ContentDescription,HardcodedText" />
 
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CinemaLink"
+        android:layout_width="374dp"
+        android:layout_height="137dp"
+        android:layout_margin="5dp"
+        android:translationY="140dp"
+        app:cardCornerRadius="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/WardrobeLink"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id='@+id/Cinema'
+                android:layout_width="160dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                app:layout_constraintBottom_toBottomOf="@+id/whitebox1"
+                app:layout_constraintStart_toStartOf="@+id/whitebox1"
+                app:layout_constraintTop_toTopOf="@+id/whitebox1"
+                app:srcCompat="@drawable/movieroom"
+                tools:ignore="ContentDescription" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/oxygen"
+                    android:text="Cinema"
+                    android:textSize="30dp" />
+
+                <TextView
+                    android:id="@+id/textViewr3341"
+                    android:layout_width="183dp"
+                    android:layout_height="76dp"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="@font/oxygen"
+                    android:text="The cinema hall of our college provides students with the opportunity to enjoy films and cultural events in a comfortable and entertaining atmosphere"
+                    android:textColor="#000000"
+                    android:textSize="11sp"
+                    app:layout_constraintEnd_toEndOf="@+id/whitebox1"
+                    app:layout_constraintStart_toEndOf="@+id/imageView9"
+                    app:layout_constraintTop_toTopOf="@+id/whitebox1"
+                    tools:ignore="HardcodedText,TextSizeCheck" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"

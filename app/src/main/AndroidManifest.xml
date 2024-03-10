@@ -29,10 +29,13 @@
         <activity
             android:name=".LockerActivity"
             android:exported="false" />
-
         <activity
             android:name=".ActivityFilms"
             android:exported="false" />
+        <activity
+            android:name=".ActivityCinema"
+            android:exported="false"
+            tools:ignore="DuplicateActivity" />
         <activity
             android:name=".MainMenu"
             android:exported="false" />
