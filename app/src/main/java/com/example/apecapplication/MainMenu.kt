@@ -3,6 +3,7 @@ import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -12,6 +13,13 @@ class MainMenu : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.page4) // Устанавливаем разметку для активности
+
+        // Получение переданного имени из Intent
+        val username = intent.getStringExtra("USERNAME_KEY")
+
+        // Используйте значение имени в вашем коде, например, установите его в TextView
+        val textView = findViewById<TextView>(R.id.textView3)
+        textView.text = "$username"
 
         val wardrobe: CardView = findViewById(R.id.WardrobeLink)
         wardrobe.setOnClickListener {

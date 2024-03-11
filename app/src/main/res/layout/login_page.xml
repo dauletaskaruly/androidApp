@@ -80,8 +80,8 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout"
-        android:layout_width="180dp"
-        android:layout_height="50dp"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
         android:layout_marginTop="20dp"
         android:backgroundTint="#FFFFFF"
         android:textColorHint="#939393"
@@ -101,17 +101,19 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/username"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:hint="Name, Username"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/oxygen_bold"
+            android:hint="Username"
             android:paddingStart="35dp"
+            android:textColor="#FFFFFF"
             android:textSize="18sp" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/TextInputLayout1"
-        android:layout_width="180dp"
-        android:layout_height="50dp"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
         android:layout_marginTop="5dp"
         android:hint="Password"
         android:textColorHint="#939393"
@@ -151,18 +153,20 @@
 
     <Button
         android:id="@+id/sign_button"
-        android:layout_width="180dp"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="108dp"
+        android:layout_marginTop="5dp"
         android:backgroundTint="#FFFFFF"
         android:fontFamily="@font/oxygen_bold"
-        android:text="Register"
-        android:textColor="#004524"
-        android:textSize="13sp"
+        android:text="Don't have an account?"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
         app:cornerRadius="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TextInputLayout1" />
+        app:layout_constraintTop_toBottomOf="@+id/login_btn" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

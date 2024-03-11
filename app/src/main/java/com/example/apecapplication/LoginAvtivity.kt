@@ -41,14 +41,15 @@ class LoginActivity : AppCompatActivity() {
                 val db = dbHelper.authenticateUser(username, password)
                 if(db) {
                     Toast.makeText(this, "Пользователь $username авторизован", Toast.LENGTH_LONG).show()
+
+                    // Передача имени пользователя на следующую активность
                     val intent = Intent(this, MainMenu::class.java)
+                    intent.putExtra("USERNAME_KEY", username)
                     startActivity(intent)
-                }
-                else{
+                } else {
                     Toast.makeText(this, "Пользователь $username НЕ авторизован", Toast.LENGTH_LONG).show()
                 }
             }
-        }
 //            if (user != null) {
 //                // Успешная аутентификация
 //                Toast.makeText(this, "Login successful!", Toast.LENGTH_SHORT).show()
@@ -62,4 +63,4 @@ class LoginActivity : AppCompatActivity() {
 //                Toast.makeText(this, "Incorrect email or password", Toast.LENGTH_SHORT).show()
 //            }
         }
-    }
+    }}

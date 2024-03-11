@@ -31,9 +31,10 @@
         android:id="@+id/textViewFilmName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/oxygen"
         android:text="Пчеловод"
         android:textColor="@color/white"
-        android:layout_gravity="center_horizontal"
         android:textSize="30dp" />
 
 </LinearLayout>

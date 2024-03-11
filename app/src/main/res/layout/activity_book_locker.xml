@@ -42,8 +42,8 @@
         <EditText
             android:id="@+id/locker1NameEditText"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Имя"/>
+            android:layout_height="50dp"
+            android:hint="Имя" />
 
         <!-- Добавьте нужное количество радиокнопок для доступных номерков -->
 

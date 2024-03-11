@@ -38,7 +38,9 @@ class RegisterActivity : AppCompatActivity() {
                 // Пользователь успешно зарегистрирован
                 Toast.makeText(this, "User registered successfully!", Toast.LENGTH_SHORT).show()
 
+                // Передача имени пользователя на следующую активность
                 val intent = Intent(this, MainMenu::class.java)
+                intent.putExtra("USERNAME_KEY", name)
                 startActivity(intent)
                 finish()
             } else {

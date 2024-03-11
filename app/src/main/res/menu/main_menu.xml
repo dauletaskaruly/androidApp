@@ -1,11 +1,14 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/navigation_home"
+        android:icon="@drawable/booking"
         android:title="Бронирование" />
     <item
         android:id="@+id/navigation_orders"
+        android:icon="@drawable/aboutus"
         android:title="О нас" />
     <item
         android:id="@+id/navigation_profile"
+        android:icon="@drawable/logout"
         android:title="Выйти из аккаунта" />
 </menu>

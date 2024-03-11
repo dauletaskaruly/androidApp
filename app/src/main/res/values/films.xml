@@ -3,7 +3,7 @@
     tools:ignore="WrongFolder">
     <string-array name="films_array">
         <item>Пчеловод|@drawable/film1</item>
-        <item>Брат или брак|@drawable/film2</item>
-        <item>Уялам но уй алам|@drawable/film3</item>
+        <item>Брат или Брак 3|@drawable/film2</item>
+        <item>Ұялам, но үй алам|@drawable/film3</item>
     </string-array>
 </resources>
