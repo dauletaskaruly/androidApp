@@ -17,9 +17,9 @@ class OrderAdapter(private val orders: List<Order>) : RecyclerView.Adapter<Order
         fun bind(order: Order) {
             orderNameTextView.text = order.dishName
             customerNameTextView.text = order.customerName
+
+            imageDish.setBackgroundResource(0)
             imageDish.setImageResource(order.image)
-//            val resourceId = context.resources.getIdentifier(order.imageResPath, "drawable", context.packageName)
-//            imageDish.setImageResource(resourceId)
         }
     }
 

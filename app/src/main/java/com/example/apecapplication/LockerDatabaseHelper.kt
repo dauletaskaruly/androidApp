@@ -1,3 +1,4 @@
+import android.annotation.SuppressLint
 import android.content.ContentValues
 import android.content.Context
 import android.database.sqlite.SQLiteDatabase
@@ -46,5 +47,30 @@ class DbHelperLocker(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME
             Log.e("DbHelperLocker", "Error inserting data into database: ${e.message}")
         }
         db.insert(TABLE_LOCKERS, null, values)
+    }
+    @SuppressLint("Range")
+    fun getColumnLockerNumber(id: Int): Int {
+        val db = readableDatabase
+        val query = "SELECT $COLUMN_LOCKER_NUMBER FROM $TABLE_LOCKERS WHERE $COLUMN_LOCKER_NAME = ?"
+        val cursor = db.rawQuery(query, arrayOf(id.toString()))
+        cursor.moveToFirst()
+        val lockerNumber = cursor.getInt(cursor.getColumnIndex(COLUMN_LOCKER_NUMBER))
+        cursor.close()
+        return lockerNumber
+    }
+
+    // Метод для получения имени бронирующего по ID
+
+    @SuppressLint("Range")
+    fun getColumnLockerNumber(lockerName: String?): Int {
+        val db = readableDatabase
+        val query = "SELECT $COLUMN_LOCKER_NUMBER FROM $TABLE_LOCKERS WHERE $COLUMN_LOCKER_NAME = ?"
+        val cursor = db.rawQuery(query, arrayOf(lockerName))
+        var lockerNumber = -1 // Значение по умолчанию, если не найдено
+        if (cursor.moveToFirst()) {
+            lockerNumber = cursor.getInt(cursor.getColumnIndex(COLUMN_LOCKER_NUMBER))
+        }
+        cursor.close()
+        return lockerNumber
     }
 }

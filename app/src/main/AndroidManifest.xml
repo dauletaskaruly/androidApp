@@ -33,6 +33,9 @@
             android:name=".ActivityFilms"
             android:exported="false" />
         <activity
+            android:name=".LockersList"
+            android:exported="false" />
+        <activity
             android:name=".ActivityCinema"
             android:exported="false"
             tools:ignore="DuplicateActivity" />

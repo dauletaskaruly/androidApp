@@ -1,6 +1,7 @@
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.apecapplication.OrdersBookDb
@@ -11,8 +12,10 @@ class OrderAdapterBook(private val orders: List<OrdersBookDb>) : RecyclerView.Ad
     inner class OrderViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         private val orderNameTextView: TextView = itemView.findViewById(R.id.textViewOrderName)
         private val customerNameTextView: TextView = itemView.findViewById(R.id.textViewCustomerName)
+        private val img: ImageView = itemView.findViewById(R.id.orderedImg)
 
         fun bind(order: OrdersBookDb) {
+            img.setBackgroundResource(0)
             orderNameTextView.text = order.bookName
             customerNameTextView.text = order.customerName
         }

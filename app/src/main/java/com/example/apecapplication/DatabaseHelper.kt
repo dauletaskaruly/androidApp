@@ -4,6 +4,7 @@ import android.content.Context
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
 import com.example.apecapplication.Order
+import java.time.temporal.TemporalAmount
 
 class DatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME, null, DATABASE_VERSION) {
 
@@ -12,7 +13,8 @@ class DatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME
                 "$COLUMN_ID INTEGER PRIMARY KEY AUTOINCREMENT," +
                 "$COLUMN_CUSTOMER_NAME TEXT," +
                 "$COLUMN_DISH_NAME TEXT," +
-                "$COLUMN_IMAGE INTEGER)"
+                "$COLUMN_IMAGE INTEGER," +
+                "$COLUMN_AMOUNT INTEGER)"
 
         db.execSQL(createTableQuery)
     }
@@ -22,13 +24,27 @@ class DatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME
         onCreate(db)
     }
 
-    fun addOrder(customerName: String, dishName: String, image: Int): Long {
+    fun addOrder(customerName: String, dishName: String, image: Int, amount: Int): Long {
         val db = this.writableDatabase
         val values = ContentValues()
         values.put(COLUMN_CUSTOMER_NAME, customerName)
         values.put(COLUMN_DISH_NAME, dishName)
         values.put(COLUMN_IMAGE, image)
+        values.put(COLUMN_AMOUNT, amount)
         return db.insert(TABLE_ORDERS, null, values)
+    }
+    @SuppressLint("Range")
+    fun getAmountForDish(dishName: String): Int {
+        val db = this.readableDatabase
+        var amount = 20
+        val cursor = db.rawQuery("SELECT * FROM $TABLE_ORDERS WHERE $COLUMN_DISH_NAME = ?", arrayOf(dishName))
+        cursor.use {
+            while (it.moveToNext()) {
+                val dishAmount = it.getInt(it.getColumnIndex(COLUMN_AMOUNT))
+                amount += dishAmount
+            }
+        }
+        return amount
     }
 
     @SuppressLint("Range")
@@ -42,7 +58,8 @@ class DatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME
                 val customerName = it.getString(it.getColumnIndex(COLUMN_CUSTOMER_NAME))
                 val dishName = it.getString(it.getColumnIndex(COLUMN_DISH_NAME))
                 val image = it.getInt(it.getColumnIndex(COLUMN_IMAGE))
-                orders.add(Order(id, customerName, dishName, image))
+                val amount = it.getInt(it.getColumnIndex(COLUMN_AMOUNT))
+                orders.add(Order(id, customerName, dishName, image, amount))
             }
         }
         return orders
@@ -55,6 +72,7 @@ class DatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME
         private const val COLUMN_CUSTOMER_NAME = "customer_name"
         private const val COLUMN_DISH_NAME = "dish_name"
         private const val COLUMN_IMAGE = "image"
+        private const val COLUMN_AMOUNT = "amount"
     }
 
 

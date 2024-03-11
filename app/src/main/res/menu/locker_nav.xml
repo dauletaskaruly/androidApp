@@ -4,16 +4,16 @@
     <item
         android:id="@+id/navigation_home"
         android:icon="@drawable/ic_home_black_24dp"
-        android:title="Заказать"/>
+        android:title="Номерки"/>
 
     <item
-        android:id="@+id/navigation_dashboard"
+        android:id="@+id/navigation_main"
         android:icon="@drawable/ic_dashboard_black_24dp"
-        android:title="Все заказы"/>
+        android:title="Мой номерок"/>
 
     <item
-        android:id="w@+id/navigation_dish"
+        android:id="@+id/navigation_notifications"
         android:icon="@drawable/ic_notifications_black_24dp"
-        android:title="Список еды"/>
+        android:title="На главную"/>
 
 </menu>

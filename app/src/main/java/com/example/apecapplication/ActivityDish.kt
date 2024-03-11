@@ -20,5 +20,7 @@ class ActivityDish : AppCompatActivity() {
 
         val adapter = CustomRecyclerViewAdapter(this, resources.getStringArray(R.array.dishes_array).toList())
         recyclerView.adapter = adapter
+
+
     }
 }

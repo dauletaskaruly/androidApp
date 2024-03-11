@@ -24,27 +24,56 @@ class BookDetailActivity : AppCompatActivity() {
 
         // Получение данных о блюде из интента
         val bookName = intent.getStringExtra("book_name")
-        val bookImg = intent.getStringExtra("book_image")
-
         val textView = findViewById<TextView>(R.id.textViewBookName)
-        val bookImgResourceId = intent.getIntExtra("book_image", 0)
 
-        val imgView = findViewById<ImageView>(R.id.imageViewBook)
+        val amountView = findViewById<TextView>(R.id.amount)
+
+
+
+
         // Установка названия блюда
         textView.text = bookName
-        imgView.setImageResource(bookImgResourceId)
-        val buyButton: Button = findViewById(R.id.orderBook)
-//
+
+
         val customerNameEditText: EditText = findViewById(R.id.customerNameEditTextbook)
-//
+
+
+        val dbHelper = DatabaseHelperBook(this)
+        val amount = dbHelper.getAmountForBook(bookName.toString())
+        val buyButton: Button = findViewById(R.id.orderBook)
         val bookNameTextView: TextView = findViewById(R.id.textViewBookName)
-//
+
+        amountView.text = amount.toString()
         buyButton.setOnClickListener {
+
+            if(customerNameEditText.text.toString().trim().isNotEmpty()) {
+                val customerName: String = customerNameEditText.text.toString()
+                val bookName: String = bookNameTextView.text.toString()
+                if(amount < 0){
+                    Toast.makeText(this, "Данное блюдо закончилось", Toast.LENGTH_SHORT).show()
+                }else {
+                    val dbHelper = DatabaseHelperBook(this)
+
+                    if (bookName != null) {
+                        dbHelper.addOrder(customerName, bookName, amount = -1)
+                        Toast.makeText(this, "Заказ добавлен в базу данных", Toast.LENGTH_SHORT).show()
+                    }
+
+                }
+            }else{
+                Toast.makeText(this, "Введите имя", Toast.LENGTH_SHORT).show()
+
+            }
+
+
+
+
+
             val customerName: String = customerNameEditText.text.toString()
             val bookName: String = bookNameTextView.text.toString()
 //
             val dbHelper = DatabaseHelperBook(this)
-            dbHelper.addOrder(customerName, bookName)
+            dbHelper.addOrder(customerName, bookName, amount = -1)
             Toast.makeText(this, "Заказ добавлен в базу данных", Toast.LENGTH_SHORT).show()
         }
 
@@ -56,8 +85,8 @@ class BookDetailActivity : AppCompatActivity() {
                 R.id.navigation_home -> {
                     // Открываем экран Home
 
-                    val intent = Intent(this, MainActivity::class.java)
-                    startActivity(intent)
+//                    val intent = Intent(this, MainActivity::class.java)
+//                    startActivity(intent)
                     true
                 }
                 R.id.navigation_orders -> {
