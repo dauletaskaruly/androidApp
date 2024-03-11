@@ -10,7 +10,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.apecapplication.R
 
-class FilmAdapter(
+class FilmAdapter  (
     private val context: Context,
     private val films: List<String>
 ) : RecyclerView.Adapter<FilmAdapter.ViewHolder>() {
