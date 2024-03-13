@@ -16,6 +16,7 @@ class MainPage : AppCompatActivity() {
         val canteen: EditText = findViewById(R.id.whitebox1)
         canteen.setOnClickListener {
             val intent = Intent(this, ActivityDish::class.java)
+            finish()
             startActivity(intent)
         }
 

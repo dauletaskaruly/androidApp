@@ -87,8 +87,8 @@ class LockerActivity : AppCompatActivity(), LockerItemClickListener {
             when (item.itemId) {
                 R.id.navigation_home -> {
                     // Открываем экран Home
-//                    val intent = Intent(this, DishDetailActivity::class.java)
-//                    startActivity(intent)
+                    val intent = Intent(this, MainMenu::class.java)
+                    startActivity(intent)
                     true
                 }
                 R.id.navigation_main -> {
@@ -96,12 +96,14 @@ class LockerActivity : AppCompatActivity(), LockerItemClickListener {
                     val intent = Intent(this, LockersList::class.java)
                     intent.putExtra("name", session)
                     startActivity(intent)
+                    finish()
                     true
                 }
                 R.id.navigation_profile -> {
                     // Открываем экран Profile
-                    val intent = Intent(this, MainMenu::class.java)
-                    startActivity(intent)
+//                    val intent = Intent(this, MainMenu::class.java)
+//                    startActivity(intent)
+//                    finish()
                     true
                 }
                 else -> false

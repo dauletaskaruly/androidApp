@@ -78,25 +78,30 @@ class BookDetailActivity : AppCompatActivity() {
         }
 
 
-        val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottom_navigation)
+        val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottom_navigation2)
 
         bottomNavigationView.setOnNavigationItemSelectedListener { item ->
             when (item.itemId) {
-                R.id.navigation_home -> {
+                R.id.nav_order -> {
                     // Открываем экран Home
 
-//                    val intent = Intent(this, MainActivity::class.java)
-//                    startActivity(intent)
+                    val intent = Intent(this, BookDetailActivity::class.java)
+                    startActivity(intent)
+                    finish()
                     true
                 }
-                R.id.navigation_orders -> {
+                R.id.nav_orders -> {
                     // Открываем экран Orders
                     val intent = Intent(this, OrdersBook::class.java)
                     startActivity(intent)
+                    finish()
                     true
                 }
-                R.id.navigation_profile -> {
+                R.id.nav_back -> {
                     // Открываем экран Profile
+                    val intent = Intent(this, Library::class.java)
+                    startActivity(intent)
+                    finish()
                     true
                 }
                 else -> false

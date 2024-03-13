@@ -2,18 +2,18 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/navigation_home"
+        android:id="@+id/navigation_tags"
         android:icon="@drawable/tags"
-        android:title="Номерки"/>
+        android:title="Tags"/>
 
     <item
         android:id="@+id/navigation_main"
         android:icon="@drawable/tag"
-        android:title="Мой номерок"/>
+        android:title="My tag"/>
 
     <item
-        android:id="@+id/navigation_notifications"
+        android:id="@+id/navigation_home"
         android:icon="@drawable/home"
-        android:title="На главную"/>
+        android:title="Home"/>
 
 </menu>

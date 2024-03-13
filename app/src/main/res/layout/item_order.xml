@@ -2,34 +2,38 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
     android:orientation="horizontal"
-    android:layout_marginBottom="70dp">
+    android:paddingLeft="20dp">
+
     <ImageView
-            android:id="@+id/orderedImg"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:background="@drawable/_num"/>
-        <LinearLayout
+        android:id="@+id/orderedImg"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/_num" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewOrderName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
-            <TextView
-                android:id="@+id/textViewOrderName"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:padding="8dp"
-                android:text="Order Name" />
+            android:padding="8dp"
+            android:text="Order Name"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/textViewCustomerName"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="16sp"
-                android:padding="8dp"
-                android:text="Customer Name" />
+        <TextView
+            android:id="@+id/textViewCustomerName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="Customer Name"
+            android:textSize="16sp" />
 
-    <!-- Другие элементы интерфейса для отображения дополнительной информации о заказе -->
+        <!-- Другие элементы интерфейса для отображения дополнительной информации о заказе -->
     </LinearLayout>
 </LinearLayout>
