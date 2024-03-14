@@ -35,17 +35,20 @@ class OrdersBook : AppCompatActivity() {
                     finish()
 //                    val intent = Intent(this, MainActivity::class.java)
 //                    startActivity(intent)
+//                    finish()
                     true
                 }
                 R.id.navigation_orders -> {
                     // Открываем экран Orders
 //                    val intent = Intent(this, OrdersBook::class.java)
 //                    startActivity(intent)
+//                    finish()
                     true
                 }
                 R.id.navigation_profile -> {
                     val intent = Intent(this, Library::class.java)
 //                    startActivity(intent)
+//                    finish()
                     true
                 }
                 else -> false

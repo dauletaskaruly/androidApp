@@ -53,16 +53,21 @@ class MainMenu : AppCompatActivity() {
 
                     val intent = Intent(this, MainMenu::class.java)
                     startActivity(intent)
+                    finish()
                     true
                 }
                 R.id.navigation_orders -> {
-                    // Открываем экран Orders
-//                    val intent = Intent(this, Orders::class.java)
-//                    startActivity(intent)
+                    // Открываем экран AboutUs
+                    val intent = Intent(this, AboutUs::class.java)
+                    startActivity(intent)
+                    finish()
                     true
                 }
                 R.id.navigation_profile -> {
-                    // Открываем экран Profile
+                    // Открываем экран Login
+                    val intent = Intent(this, LoginActivity::class.java)
+                    startActivity(intent)
+                    finish()
                     true
                 }
                 else -> false

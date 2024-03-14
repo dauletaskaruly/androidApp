@@ -2,13 +2,13 @@
     <item
         android:id="@+id/navigation_home"
         android:icon="@drawable/booking"
-        android:title="Бронирование" />
+        android:title="Booking" />
     <item
         android:id="@+id/navigation_orders"
         android:icon="@drawable/aboutus"
-        android:title="О нас" />
+        android:title="About us" />
     <item
         android:id="@+id/navigation_profile"
         android:icon="@drawable/logout"
-        android:title="Выйти из аккаунта" />
+        android:title="Log out" />
 </menu>

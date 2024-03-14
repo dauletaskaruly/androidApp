@@ -45,7 +45,9 @@
         <activity
             android:name=".Orders"
             android:exported="false" />
-
+        <activity
+            android:name=".AboutUs"
+            android:exported="false" />
         <activity
             android:name=".DishDetailActivity"
             android:exported="false" />
