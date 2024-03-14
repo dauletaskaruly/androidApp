@@ -28,11 +28,11 @@ class ActivityFilms : AppCompatActivity(), FilmItemClickListener {
 
         dbHelper = DbHelperFilm(this)
         recyclerView = findViewById(R.id.recyclerViewFilm)
-        recyclerView.layoutManager = GridLayoutManager(this, 7)
+        recyclerView.layoutManager = GridLayoutManager(this, 6)
 
         // Создаем список но    мерков
         val filmNumbers = mutableListOf<String>()
-        for (i in 1..50) {
+        for (i in 1..60) {
             filmNumbers.add("$i")
         }
 
