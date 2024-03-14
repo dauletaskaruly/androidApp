@@ -7,7 +7,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.apecapplication.LockerActivity
 import com.example.apecapplication.R
 
-class GridAdapterFilm(
+class
+GridAdapterFilm(
 //    private val context: Context,
     private val filmNumbers: MutableList<String>,
 //    private val context: Context,
