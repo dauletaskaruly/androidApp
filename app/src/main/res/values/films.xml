@@ -2,8 +2,8 @@
 <resources xmlns:tools="http://schemas.android.com/tools"
     tools:ignore="WrongFolder">
     <string-array name="films_array">
-        <item>«The \n Beekeeper»|@drawable/film1</item>
-        <item>«Брат \n или Брак 3»|@drawable/bratilibrak</item>
-        <item>«Ұялам, \n но үй алам»|@drawable/film3</item>
+        <item>«The Beekeeper»|@drawable/film1|16:30 PM|Adam Clay lives in a quiet suburb and is engaged in bee breeding. He is friends with an elderly neighbor, Mrs. Parker, from whom he rents a barn. One day, she becomes a victim of cybercriminals who steal money from all her accounts, which is why she takes her own life. Realizing that the law is powerless in this situation, Adam decides to use all his strength to take revenge.</item>
+        <item>«Брат или Брак 3»|@drawable/bratilibrak|18:30 PM|«Брат или Брак 3» -  is an exciting film that continues the epic story of the heroes Gauhar and Aidar. In this part, the fate of their relationship is on the verge of destruction due to Aidars doubts about fatherhood when Gauhar gives birth to twins. This causes insurmountable insecurity and growing tension between the spouses.</item>
+        <item>«Ұялам, но үй алам»|@drawable/film3|20:30 PM|Living in a rented apartment, Syrym and Aizhan decide to arrange a fictitious divorce, using their status as a large family to receive an apartment from the state. At a time when Syrym is worried about no one finding out about their divorce, Aizhan is more worried about how, keeping up with his acquaintances and friends, he would rather buy an apartment.</item>
     </string-array>
 </resources>

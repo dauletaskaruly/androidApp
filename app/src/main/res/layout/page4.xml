@@ -81,6 +81,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal">
+
             <ImageView
                 android:id="@+id/imageView9"
                 android:layout_width="152dp"
@@ -91,11 +92,12 @@
                 app:layout_constraintTop_toTopOf="@+id/whitebox1"
                 app:srcCompat="@drawable/canteen"
                 tools:ignore="ContentDescription" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:layout_marginLeft="15dp">
+                android:layout_marginLeft="15dp"
+                android:orientation="vertical">
 
                 <TextView
                     android:layout_width="150dp"
@@ -190,11 +192,11 @@
         android:layout_marginStart="26dp"
         android:layout_marginTop="-30dp"
         android:layout_marginEnd="26dp"
+        android:contentDescription="TODO"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ellipse_4"
-        android:contentDescription="TODO"
         tools:ignore="ContentDescription,HardcodedText" />
 
     <androidx.cardview.widget.CardView
@@ -261,11 +263,11 @@
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
-        android:textAlignment="center"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:fontFamily="@font/oxygen_bold"
         android:text="What do you want to book?"
+        android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"

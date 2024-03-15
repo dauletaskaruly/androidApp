@@ -7,6 +7,7 @@ import GridAdapter
 import GridAdapterFilm
 import LockerItemClickListener
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
 import android.widget.EditText
 import android.widget.Toast
@@ -30,7 +31,7 @@ class ActivityFilms : AppCompatActivity(), FilmItemClickListener {
         recyclerView = findViewById(R.id.recyclerViewFilm)
         recyclerView.layoutManager = GridLayoutManager(this, 8)
 
-        // Создаем список но    мерков
+        // Создаем список номерков
         val filmNumbers = mutableListOf<String>()
         for (i in 1..48) {
             filmNumbers.add("$i")
@@ -73,17 +74,19 @@ class ActivityFilms : AppCompatActivity(), FilmItemClickListener {
 
             // Создаем диалоговое окно для ввода имени
             val builder = AlertDialog.Builder(this)
-            builder.setTitle("Забронировать место")
+            builder.setTitle("Book a seat")
             val input = EditText(this)
             builder.setView(input)
 
             // Обработка нажатия кнопки "Забронировать"
-            builder.setPositiveButton("Забронировать") { dialog, _ ->
+            builder.setPositiveButton("Order") { dialog, _ ->
                 val name = input.text.toString().trim()
                 if (name.isEmpty()) {
-                    Toast.makeText(this, "Введите ваше имя", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, "Write your name", Toast.LENGTH_SHORT).show()
                     return@setPositiveButton
                 }
+                val intent = Intent(this, FilmTicket::class.java)
+                startActivity(intent)
 
                 // Бронируем номерок в базе данных
                 dbHelper.bookFilm(db, filmNumber, name)
@@ -94,14 +97,12 @@ class ActivityFilms : AppCompatActivity(), FilmItemClickListener {
             }
 
             // Обработка нажатия кнопки "Отмена"
-            builder.setNegativeButton("Отмена") { dialog, _ ->
+            builder.setNegativeButton("Cancel") { dialog, _ ->
                 dialog.cancel()
             }
 
             builder.show()
 
         }
-
-
     }
 }

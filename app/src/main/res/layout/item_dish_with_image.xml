@@ -6,7 +6,7 @@
     android:layout_height="340dp"
     android:layout_margin="10dp"
     android:background="@drawable/background"
-    android:backgroundTint="#5B8DB3"
+    android:backgroundTint="#EACA7A"
     android:orientation="vertical"
     android:padding="8dp"
     android:translationX="5dp">

@@ -57,6 +57,8 @@
         <activity android:name=".Library" />
         <activity android:name=".OrdersBook" />
 <!--        <activity android:name="." />-->
+        <activity android:name=".FilmTicket" />
+        <activity android:name=".LockerNomerok" />
         <activity
             android:name=".MainActivity"
             android:exported="true"

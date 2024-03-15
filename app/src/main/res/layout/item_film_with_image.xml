@@ -31,12 +31,12 @@
         android:id="@+id/textViewFilmName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="5dp"
         android:fontFamily="@font/oxygen"
         android:text="Пчеловод"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="28dp"
+        android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageViewFilm"
         app:layout_constraintTop_toTopOf="parent" />
@@ -50,5 +50,43 @@
         app:cardCornerRadius="5dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView83"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/oxygen_bold"
+        android:text="₸1000"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewFilmTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/oxygen_bold"
+        android:text="Time"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageViewFilm" />
+
+    <TextView
+        android:id="@+id/textViewFilmAbout"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/oxygen"
+        android:text="«Брат или Брак 3» -  is an exciting film that continues the epic story of the heroes Gauhar and Aidar. In this part, the fate of their relationship is on the verge of destruction due to Aidar's doubts about fatherhood when Gauhar gives birth to twins. This causes insurmountable insecurity and growing tension between the spouses."
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/imageViewFilm"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFilmName" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

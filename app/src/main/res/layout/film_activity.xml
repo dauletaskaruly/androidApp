@@ -41,6 +41,7 @@
         android:id="@+id/textView78"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/oxygen_bold"
         android:gravity="center"
         android:text="Booking"
         android:textSize="25dp"
@@ -51,25 +52,11 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView16"
         app:layout_constraintVertical_bias="0.098" />
 
-    <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="67dp"
-        android:layout_height="51dp"
-        android:backgroundTint="#FFFFFF"
-        android:scaleType="centerInside"
-        app:layout_constraintBottom_toTopOf="@+id/imageView84"
-        app:layout_constraintEnd_toEndOf="@+id/textView78"
-        app:layout_constraintHorizontal_bias="0.095"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView16"
-        app:layout_constraintVertical_bias="0.055"
-        app:srcCompat="@drawable/back"
-        tools:ignore="SpeakableTextPresentCheck" />
-
     <TextView
         android:id="@+id/textView80"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/oxygen_bold"
         android:text="Select Seats"
         android:textSize="25dp"
         app:layout_constraintBottom_toTopOf="@+id/imageView84"
@@ -83,6 +70,7 @@
         android:id="@+id/textView81"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/oxygen_bold"
         android:text="Available"
         android:textSize="18dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -97,40 +85,37 @@
         android:id="@+id/textView82"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="80dp"
+        android:fontFamily="@font/oxygen_bold"
         android:text="Reserved"
         android:textSize="18dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView89"
         app:layout_constraintEnd_toStartOf="@+id/textView81"
-        app:layout_constraintHorizontal_bias="0.321"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/recyclerViewFilm"
-        app:layout_constraintVertical_bias="0.136"
+        app:layout_constraintTop_toTopOf="@+id/imageView89"
+        app:layout_constraintVertical_bias="1.0"
         tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/imageView87"
         android:layout_width="42dp"
         android:layout_height="20dp"
-        android:layout_marginTop="10dp"
         android:layout_marginEnd="-5dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/textView81"
         app:layout_constraintEnd_toStartOf="@+id/textView81"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/textView82"
-        app:layout_constraintTop_toBottomOf="@+id/recyclerViewFilm"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintTop_toTopOf="@+id/textView81"
         app:srcCompat="@drawable/green" />
 
     <ImageView
         android:id="@+id/imageView89"
         android:layout_width="20dp"
         android:layout_height="23dp"
+        android:layout_marginEnd="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/textView82"
-        app:layout_constraintHorizontal_bias="0.891"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/recyclerViewFilm"
-        app:layout_constraintVertical_bias="0.136"
+        app:layout_constraintVertical_bias="0.146"
         app:srcCompat="@drawable/red" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
