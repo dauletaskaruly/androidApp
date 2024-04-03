@@ -100,7 +100,6 @@ class ActivityFilms : AppCompatActivity(), FilmItemClickListener {
             builder.setNegativeButton("Cancel") { dialog, _ ->
                 dialog.cancel()
             }
-
             builder.show()
 
         }

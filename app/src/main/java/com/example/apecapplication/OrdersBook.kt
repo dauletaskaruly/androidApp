@@ -30,25 +30,26 @@ class OrdersBook : AppCompatActivity() {
 
         bottomNavigationView.setOnNavigationItemSelectedListener { item ->
             when (item.itemId) {
-                R.id.navigation_home -> {
+                R.id.nav_order -> {
                     // Открываем экран Home
-                    finish()
-//                    val intent = Intent(this, MainActivity::class.java)
-//                    startActivity(intent)
 //                    finish()
+                    val intent = Intent(this, MainActivity::class.java)
+                    startActivity(intent)
+                    finish()
                     true
                 }
-                R.id.navigation_orders -> {
+                R.id.nav_orders -> {
+                    finish()
                     // Открываем экран Orders
 //                    val intent = Intent(this, OrdersBook::class.java)
 //                    startActivity(intent)
 //                    finish()
                     true
                 }
-                R.id.navigation_profile -> {
+                R.id.nav_back -> {
                     val intent = Intent(this, Library::class.java)
 //                    startActivity(intent)
-//                    finish()
+                    finish()
                     true
                 }
                 else -> false
